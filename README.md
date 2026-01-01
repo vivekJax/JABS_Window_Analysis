@@ -1,5 +1,9 @@
 # Window Size Analysis Application
 
+> **Analyze cross-validation results to determine optimal window sizes for behavior classification**
+
+![F1 Behavior Performance](docs/images/f1_behavior_barbell.svg)
+
 ## Purpose
 
 This application analyzes cross-validation results from behavior classification experiments to determine the optimal window size for feature generation and classification. The analysis compares performance metrics (accuracy, precision, recall, F1 scores) across different window sizes (5, 10, 15, 20, 25, 30 frames) to identify:
@@ -18,6 +22,26 @@ The application is designed to handle variable numbers of videos, window sizes, 
 - **Statistical Analysis**: Identifies best window sizes and performance patterns
 - **Interactive HTML Reports**: Beautiful, comprehensive reports with visualizations
 - **Animal-Level Analysis**: Correctly handles cross-validation where one animal (identity) is held out at a time
+
+## Quick Preview
+
+<div align="center">
+
+### Performance Metrics Comparison
+
+| F1 (Behavior) | Mean Accuracy |
+|:---:|:---:|
+| ![F1 Behavior](docs/images/f1_behavior_barbell.svg) | ![Accuracy](docs/images/accuracy_barbell.svg) |
+
+### Distribution Analysis
+
+![F1 Behavior Distribution](docs/images/f1_behavior_boxplot.svg)
+
+### Window Sensitivity Analysis
+
+![Lollipop Plot](docs/images/lollipop_example.svg)
+
+</div>
 
 ## Directory Structure
 
@@ -298,7 +322,7 @@ The report identifies:
 
 ## Visualizations
 
-The HTML report includes several types of visualizations. **See the generated HTML report for actual plots.**
+The HTML report includes several types of visualizations. Here are some examples:
 
 ### 1. Barbell/Dot Plots (Section 1)
 **Purpose**: Compare performance metrics across window sizes
@@ -320,6 +344,12 @@ The HTML report includes several types of visualizations. **See the generated HT
 
 **Example**: Shows that Window 20 frames has the highest F1 (Behavior) value, highlighted in red.
 
+#### F1 (Behavior) - Most Important Metric
+![F1 Behavior Barbell Plot](docs/images/f1_behavior_barbell.svg)
+
+#### Mean Accuracy
+![Accuracy Barbell Plot](docs/images/accuracy_barbell.svg)
+
 ### 2. Box-Whisker Plots (Section 2)
 **Purpose**: Show distribution of performance across all videos for each window size
 
@@ -337,6 +367,8 @@ The HTML report includes several types of visualizations. **See the generated HT
 
 **Example**: Shows that Window 20 frames has a higher median and tighter distribution than smaller windows, with fewer outliers.
 
+![F1 Behavior Box-Whisker Plot](docs/images/f1_behavior_boxplot.svg)
+
 ### 3. Lollipop Plots (Section 4)
 **Purpose**: Visualize how F1 (Behavior) varies across window sizes for sensitive videos
 
@@ -351,6 +383,8 @@ The HTML report includes several types of visualizations. **See the generated HT
 **Shown For**: Top 10 most window-sensitive videos
 
 **Example**: Shows videos where F1 (Behavior) varies dramatically across window sizes, helping identify which videos need window size optimization.
+
+![Lollipop Plot Example](docs/images/lollipop_example.svg)
 
 ### 4. Performance Tables
 **Purpose**: Quick comparison of metrics across window sizes
