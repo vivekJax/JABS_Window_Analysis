@@ -1,0 +1,97 @@
+Window Size Results Validation Report
+================================================================================
+
+1. ROW COUNT VALIDATION
+--------------------------------------------------------------------------------
+   ✗ FAIL: Row counts are inconsistent
+   Video results: 305 rows (expected: 260)
+   Summary stats: 5 rows (expected: 5)
+   Feature importance: 50 rows (expected: 50)
+
+2. VIDEO CONSISTENCY VALIDATION
+--------------------------------------------------------------------------------
+   ✗ FAIL: Windows have different video sets
+   Video-identity pair counts per window:
+     Window 5: 61 (video, identity) pairs
+     Window 10: 61 (video, identity) pairs
+     Window 15: 61 (video, identity) pairs
+     Window 20: 61 (video, identity) pairs
+     Window 30: 61 (video, identity) pairs
+   Missing (video, identity) pairs:
+     Window 10: [('org-9-uploads-stage.study_1013.cage_4995.2025-03-17.02.55.mp4', 0), ('org-3-uploads-stage.study_410.cage_4484.2025-07-30.14.19.mp4', 2), ('org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4', 1), ('org-3-uploads-stage.study_507.cage_5502.2025-10-15.22.32.mp4', 0)]
+     Window 15: [('org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4', 2), ('org-9-uploads-stage.study_1174.cage_5991.2025-06-15.16.00.mp4', 1), ('org-3-uploads-stage.study_410.cage_4482.2025-07-16.07.13.mp4', 1), ('org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4', 0)]
+     Window 20: [('org-3-uploads-stage.study_476.cage_5057.2025-09-26.09.40.mp4', 2), ('org-3-uploads-stage.study_410.cage_4486.2025-07-16.13.08.mp4', 1), ('org-3-prod.study_443.cage_4823.2025-08-11.23.22.mp4', 0), ('org-9-uploads-stage.study_1013.cage_4995.2025-03-17.00.08.mp4', 0)]
+     Window 30: [('org-3-uploads-stage.study_460.cage_4979.2025-09-04.05.45.mp4', 1), ('org-3-uploads-stage.study_460.cage_4984.2025-09-03.05.37.mp4', 0), ('org-3-uploads-stage.study_460.cage_4986.2025-09-03.08.11.mp4', 0), ('org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4', 1)]
+   Extra (video, identity) pairs:
+     Window 10: [('org-3-uploads-stage.study_476.cage_5056.2025-09-24.22.45.mp4', 1), ('org-3-uploads-stage.study_410.cage_4483.2025-07-16.13.28.mp4', 1), ('org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4', 0), ('org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4', 1)]
+     Window 15: [('org-3-uploads-stage.study_476.cage_5056.2025-09-24.22.45.mp4', 1), ('org-3-uploads-stage.study_410.cage_4483.2025-07-16.13.28.mp4', 1), ('org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4', 0), ('org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4', 1)]
+     Window 20: [('org-3-uploads-stage.study_476.cage_5056.2025-09-24.22.45.mp4', 1), ('org-3-uploads-stage.study_410.cage_4483.2025-07-16.13.28.mp4', 1), ('org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4', 0), ('org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4', 1)]
+     Window 30: [('org-3-uploads-stage.study_476.cage_5056.2025-09-24.22.45.mp4', 1), ('org-3-uploads-stage.study_410.cage_4483.2025-07-16.13.28.mp4', 1), ('org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4', 0), ('org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4', 1)]
+
+3. DATA INTEGRITY VALIDATION
+--------------------------------------------------------------------------------
+   ✗ FAIL: Data integrity issues found
+     - Video 'org-3-uploads-stage.study_410.cage_4482.2025-07-14.13.38.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_427.cage_4488.2025-07-17.00.18.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_443.cage_4823.2025-08-11.23.16.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_448.cage_4864.2025-09-06.00.48.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4' in window 10 has 3 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4555.2025-07-19.04.49.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4558.2025-08-04.08.38.mp4' in window 10 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_448.cage_4864.2025-09-06.00.48.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4' in window 15 has 3 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4555.2025-07-19.04.49.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_427.cage_4488.2025-07-17.00.18.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1013.cage_4995.2025-03-17.02.55.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4558.2025-08-04.08.38.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4482.2025-07-14.13.38.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_443.cage_4823.2025-08-11.23.16.mp4' in window 15 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4482.2025-07-14.13.38.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4555.2025-07-19.04.49.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4' in window 20 has 3 rows (expected 1)
+     - Video 'org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4' in window 20 has 3 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_427.cage_4488.2025-07-17.00.18.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_443.cage_4823.2025-08-11.23.16.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4558.2025-08-04.08.38.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_448.cage_4864.2025-09-06.00.48.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1013.cage_4995.2025-03-17.02.55.mp4' in window 20 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_443.cage_4823.2025-08-11.23.16.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1013.cage_4995.2025-03-17.02.55.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4555.2025-07-19.04.49.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4' in window 5 has 3 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_427.cage_4488.2025-07-17.00.18.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4482.2025-07-14.13.38.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4558.2025-08-04.08.38.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4' in window 5 has 3 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_448.cage_4864.2025-09-06.00.48.mp4' in window 5 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_470.cage_5049.2025-09-09.00.30.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4482.2025-07-14.13.38.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_448.cage_4864.2025-09-06.00.48.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_427.cage_4488.2025-07-17.00.18.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4555.2025-07-19.04.49.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_410.cage_4480.2025-08-02.03.41.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1175.cage_5999.2025-06-29.05.08.mp4' in window 30 has 3 rows (expected 1)
+     - Video 'org-3-prod.study_443.cage_4823.2025-08-11.23.16.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-prod.study_428.cage_4522.2025-07-15.00.22.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-3-uploads-stage.study_431.cage_4558.2025-08-04.08.38.mp4' in window 30 has 2 rows (expected 1)
+     - Video 'org-9-uploads-stage.study_1013.cage_4995.2025-03-17.02.55.mp4' in window 30 has 2 rows (expected 1)
+
+4. SUMMARY STATISTICS VALIDATION
+--------------------------------------------------------------------------------
+   ✓ PASS: Summary statistics match computed values
+
+================================================================================
+VALIDATION SUMMARY
+================================================================================
+
+✗ SOME VALIDATION CHECKS FAILED
+See details above for specific issues.
+
+Validation report saved to: /Users/vkumar/Downloads/envision_turn_left_2025-12-26/window_size_analysis/data/processed/validation_report.txt

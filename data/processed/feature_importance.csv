@@ -1,0 +1,51 @@
+window_size,rank,feature_name,importance
+10,1,angular_velocity mean angular_velocity,0.09
+10,2,angular_velocity median angular_velocity,0.02
+10,3,pairwise_distances fft_band-3.0Hz-5.0Hz RIGHT_EAR-TIP_TAIL,0.02
+10,4,point_velocity_dirs mean RIGHT_EAR velocity direction,0.02
+10,5,centroid_velocity_dir mean centroid_velocity_dir cosine,0.01
+10,6,centroid_velocity_dir std_dev centroid_velocity_dir,0.01
+10,7,centroid_velocity_dir std_dev centroid_velocity_dir cosine,0.01
+10,8,centroid_velocity_mag mean centroid_velocity_mag,0.01
+10,9,lixit_distances fft_band-8.0Hz-15.0Hz distance to lixit LEFT_EAR,0.01
+10,10,lixit_distances min distance to lixit NOSE,0.01
+15,1,angular_velocity mean angular_velocity,0.09
+15,2,point_speeds median LEFT_EAR speed,0.02
+15,3,point_velocity_dirs mean BASE_TAIL velocity direction,0.02
+15,4,angular_velocity median angular_velocity,0.01
+15,5,centroid_velocity_dir fft_band-1.0Hz-3.0Hz centroid_velocity_dir sine,0.01
+15,6,centroid_velocity_dir psd_max centroid_velocity_dir cosine,0.01
+15,7,lixit_distances fft_band-8.0Hz-15.0Hz distance to lixit BASE_TAIL,0.01
+15,8,lixit_distances mean distance to lixit NOSE,0.01
+15,9,lixit_distances median distance to lixit NOSE,0.01
+15,10,lixit_distances min distance to lixit LEFT_EAR,0.01
+20,1,angular_velocity mean angular_velocity,0.07
+20,2,point_speeds median LEFT_EAR speed,0.05
+20,3,pairwise_distances mean NOSE-TIP_TAIL,0.03
+20,4,point_speeds fft_band-8.0Hz-15.0Hz NOSE speed,0.02
+20,5,point_velocity_dirs mean BASE_TAIL velocity direction,0.02
+20,6,angular_velocity median angular_velocity,0.01
+20,7,centroid_velocity_dir fft_band-1.0Hz-3.0Hz centroid_velocity_dir cosine,0.01
+20,8,centroid_velocity_dir std_dev centroid_velocity_dir cosine,0.01
+20,9,lixit_distances fft_band-5.0Hz-8.0Hz distance to lixit BASE_TAIL,0.01
+20,10,lixit_distances fft_band-8.0Hz-15.0Hz distance to lixit NOSE,0.01
+5,1,angular_velocity mean angular_velocity,0.11
+5,2,point_velocity_dirs mean BASE_TAIL velocity direction,0.02
+5,3,angular_velocity median angular_velocity,0.01
+5,4,lixit_distances min distance to lixit RIGHT_EAR,0.01
+5,5,lixit_distances psd_max distance to lixit BASE_TAIL,0.01
+5,6,lixit_distances psd_mean distance to lixit BASE_TAIL,0.01
+5,7,lixit_distances psd_mean distance to lixit NOSE,0.01
+5,8,lixit_distances psd_std_dev distance to lixit BASE_TAIL,0.01
+5,9,lixit_distances std_dev distance to lixit TIP_TAIL,0.01
+5,10,mouse_lixit_angle fft_band-1.0Hz-3.0Hz centroid - nose,0.01
+30,1,angular_velocity mean angular_velocity,0.08
+30,2,pairwise_distances max NOSE-BASE_TAIL,0.03
+30,3,point_speeds psd_max BASE_TAIL speed,0.02
+30,4,mouse_lixit_angle psd_kurtosis centroid - nose,0.02
+30,5,pairwise_distances mean LEFT_EAR-TIP_TAIL,0.01
+30,6,pairwise_distances skew LEFT_EAR-TIP_TAIL,0.01
+30,7,pairwise_distances kurtosis BASE_TAIL-TIP_TAIL,0.01
+30,8,pairwise_distances kurtosis NOSE-TIP_TAIL,0.01
+30,9,pairwise_distances fft_band-0.1Hz-1.0Hz LEFT_EAR-TIP_TAIL,0.01
+30,10,pairwise_distances fft_band-1.0Hz-3.0Hz NOSE-BASE_TAIL,0.01

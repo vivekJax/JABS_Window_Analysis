@@ -1,0 +1,13 @@
+Parsing Metadata
+================================================================================
+
+Number of windows: 5
+Number of videos: 61
+Window sizes: [5, 10, 15, 20, 30]
+
+Video counts per window:
+  Window 5: 61 videos
+  Window 10: 61 videos
+  Window 15: 61 videos
+  Window 20: 61 videos
+  Window 30: 61 videos
